@@ -41,7 +41,7 @@ let isCuteMixin = function(obj) {
 };
 let singMixin = function(obj) {
   obj.sing = function() {
-    console.log("Singing to an awesome tune");
+    console.log("Cantando un temón!");
   };
 };
 
