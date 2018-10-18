@@ -7,7 +7,7 @@ localeTitle: Recuerde establecer la propiedad del constructor al cambiar el prot
 ---
 
 ## Description
-<section id="description"> Hay un efecto secundario crucial de configurar manualmente el <code>prototype</code> en un nuevo objeto. Se borró la propiedad del <code>constructor</code> ! El código del desafío anterior imprimirá lo siguiente para el <code>duck</code> : <blockquote> console.log (duck.constructor) <br> // imprime &#39;indefinido&#39; - ¡Vaya! </blockquote> Para solucionar esto, siempre que un prototipo se establezca manualmente en un nuevo objeto, recuerde definir la propiedad del <code>constructor</code> : <blockquote> Bird.prototype = { <br> constructor: Bird, // define la propiedad del constructor <br> NumLegs: 2, <br> comer: función () { <br> console.log (&quot;nom nom nom&quot;); <br> } <br> describe: function () { <br> console.log (&quot;Mi nombre es&quot; + this.name); <br> } <br> }; </blockquote></section>
+<section id="description"> Hay un efecto secundario crucial al configurar manualmente el <code>prototype</code> en un nuevo objeto. Se borró la propiedad del <code>constructor</code> ! El código del desafío anterior imprimirá lo siguiente para el <code>duck</code> : <blockquote> console.log (duck.constructor) <br> // imprime &#39;indefinido&#39; - ¡Vaya! </blockquote> Para solucionar esto, siempre que un prototipo se establezca manualmente en un nuevo objeto, recuerde definir la propiedad del <code>constructor</code> : <blockquote> Bird.prototype = { <br> constructor: Bird, // define la propiedad del constructor <br> NumLegs: 2, <br> comer: función () { <br> console.log (&quot;nom nom nom&quot;); <br> } <br> describe: function () { <br> console.log (&quot;Mi nombre es&quot; + this.name); <br> } <br> }; </blockquote></section>
 
 ## Instructions
 <section id="instructions"> Definir la propiedad del <code>constructor</code> en el <code>prototype</code> <code>Dog</code> . </section>
@@ -42,7 +42,7 @@ Dog.prototype = {
     console.log("nom nom nom");
   },
   describe: function() {
-    console.log("My name is " + this.name);
+    console.log("Mi nombre es " + this.name);
   }
 };
 
